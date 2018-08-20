@@ -1,0 +1,13 @@
+# config/cucumber.yml
+
+---
+default: &default
+  URI=https://www.discovery.com
+  BROWSER=chrome
+  SET=production
+
+production:
+  <<: *default
+
+staging:
+  <<: *default
